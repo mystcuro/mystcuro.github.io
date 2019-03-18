@@ -1,5 +1,5 @@
 .banner{
-  background: url(../img/356502.jpg) no-repeat;
+  background: url(../img/1_home.jpg) no-repeat;
   width: 695px;
   height: 231px;
   clear: both;
@@ -16,10 +16,10 @@
 }
 p{
   font-size: 13px;
-  line-height: 20px;
+  line-hei ght: 20px;
   color: #353535;
 }
-h1,h2{
+header h1{
   letter-spacing: -1px;
 }
 h3{
@@ -58,8 +58,7 @@ nav a{
   text-transform: lowercase;
 }
 header h1{
-  background: url(../img/logo.png) no-repeat;
-  text-indent: -9999px;
+  text-indent: 0px;
   width: 174px;
   height: 23px;
   margin: 10px 10px 22px;
@@ -120,4 +119,5 @@ nav li{
 }
 footer{
   clear: both;
+    margin-top: 80px;
 }
