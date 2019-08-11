@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    
+    background-color: ;
+    color: #ffffff;
+    font-family: 'Playfair+Display', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    margin: 0 auto 0 auto;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0,.7),rgba(0,0, 0, .7)), url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.tech-talk-textbox{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    margin:0;
+    font-size: 125%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 200px; 
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+.button-tutorial:link,
+.button-tutorial:visited{
+    margin-top: 20px;
+    margin-right: 20px;   
+    color: #fff;
+    border: 1.5px solid #ecf0f1;
+    background-color: #2ecc71;
+}
+.button-author:link,
+.button-author:visited{
+    margin-top: 20px;
+    color: #fff;
+    border: 1.5px solid #ecf0f1;
+}
+
+.btn:hover,
+.btn:active{
+    border: 3px solid #2c3e50;
+    
+}
+
+.button-tutorials:hover,
+.button-tutorials:active{
+    border: 3px solid #2c3e50;
+    background-color: #186b3b;
+    
+}
+
+.button-author:hover,
+.button-author:active{
+    border: 3px solid #2c3e50;
+    
+}
+
+.logo{
+    float: left;
+    width: 175px;
+    padding: 20px 0px 0px 20px;
+    
+}
+.main-nav {
+    float: right;
+}
+.main-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 65px;
+    margin-right: 25px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 115%;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    padding: 10px 2px 10px 2px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+    border-top: 2px solid #e67e22;
+    font-size: 135%;
+    transition: border .2s;
+}
