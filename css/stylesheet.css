@@ -27,16 +27,17 @@ header{
 
 .tech-talk-textbox{
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 h1{
     margin:0;
-    font-size: 125%;
+    font-size: 200%;
     letter-spacing: 1px;
     word-spacing: 3px;
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .btn:link,
@@ -49,11 +50,15 @@ h1{
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-
+.btn{
+    text-transform: full-width;
+    font-size: 200%;
+}
 .button-tutorial:link,
 .button-tutorial:visited{
     margin-top: 20px;
-    margin-right: 20px;   
+    margin-left: 70px;
+    margin-right: 65px;   
     color: #fff;
     border: 1.5px solid #ecf0f1;
     background-color: #2ecc71;
