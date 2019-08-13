@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    
+    background-color:#fff ;
+    color: #000;
+    font-family: 'Playfair+Display', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    margin: 0 auto ;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0,.7),rgba(0,0, 0, .7)), url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.tech-talk-textbox{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* --- Headings --- */
+
+h1{
+    margin:0;
+    font-size: 200%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: #fff;
+    align-content: center;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-align: center;
+}
+h2:after{
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #e67e22;
+    content: "";
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+h3{
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+/* ----- Paragraph ---- */
+
+.long-para{
+    line-height: 145%;
+    letter-spacing: 1px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 20px;
+    
+}
+.box p{
+    font-size: 100%;
+    line-height: 145%;
+}
+
+/* ---- Boxes--- */
+
+.box{
+    padding: 1%;
+}
+
+/* --- Icons --- */
+.icon-big{
+    font-size: 400%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* -----Buttons---- */
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 200px; 
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn{
+    text-transform: full-width;
+    font-size: 200%;
+}
+.button-tutorial:link,
+.button-tutorial:visited{
+    margin-top: 20px;
+    margin-right: 50px;   
+    color: #fff;
+    border: 1.5px solid #ecf0f1;
+    background-color: #2ecc71;
+}
+.button-author:link,
+.button-author:visited{
+    margin-top: 20px;
+    color: #fff;
+    border: 1.5px solid #ecf0f1;
+}
+
+.btn:hover,
+.btn:active{
+    border: 3px solid #2c3e50;
+    
+}
+
+.button-tutorials:hover,
+.button-tutorials:active{
+    border: 3px solid #2c3e50;
+    background-color: #186b3b;
+    
+}
+
+.button-author:hover,
+.button-author:active{
+    border: 3px solid #2c3e50;
+    
+}
+
+/* ---- logo --- */
+
+.logo{
+    float: left;
+    width: 175px;
+    padding: 20px 0px 0px 20px;
+    width: 20%;
+}
+
+
+/*---- Navigation Bar ---- */
+
+
+.main-nav {
+    float: right;
+    
+}
+.main-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 65px;
+    margin-right: 25px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 115%;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    padding: 10px 2px 10px 2px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+    border-top: 2px solid #e67e22;
+    font-size: 135%;
+    transition: border .2s;
+}
+
+/* --- Section --- */
+
+section {
+    padding: 80px 60px;
+}
+.section-courses{
+    margin: 0;
+    padding: 0;
+}
+/* ---- Course Menu --- */
+.first-imageshow{
+    list-style: none;
+    width: 100%;
+}
+.first-imageshow li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.menu-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.menu-photo img{
+    opacity: .7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform .5s, opacity .5s;
+}
+.menu-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
