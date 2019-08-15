@@ -138,20 +138,19 @@ h3{
 
 .btn:hover,
 .btn:active{
-    border: 3px solid #2c3e50;
+    border: 3px solid #e67e22;
     
 }
 
 .button-tutorials:hover,
 .button-tutorials:active{
-    border: 3px solid #e67e22;
     background-color: #186b3b;
     
 }
 
 .button-author:hover,
 .button-author:active{
-    border: 3px solid #e67e22;
+    border: 4px solid #e67e22;
     
 }
 
