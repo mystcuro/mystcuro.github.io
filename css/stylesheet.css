@@ -5,16 +5,24 @@
 }
 html{
     
-    background-color: ;
-    color: #ffffff;
+    background-color:#fff ;
+    color: #000;
     font-family: 'Playfair+Display', sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-rendering: optimizeLegibility;
 }
+.clearfix{zoom:1}
+.clearfix:after{
+    content:".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 
 .row{
-    margin: 0 auto 0 auto;
+    margin: 0 auto ;
 }
 
 header{
@@ -31,6 +39,11 @@ header{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+
+/* --- Headings --- */
+
+
 h1{
     margin:0;
     font-size: 200%;
@@ -38,7 +51,86 @@ h1{
     word-spacing: 3px;
     text-transform: uppercase;
     padding-bottom: 20px;
+    color: #fff;
+    align-content: center;
 }
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    text-align: center;
+}
+h2:after{
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #e67e22;
+    content: "";
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+h3{
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+
+
+/* ----- Paragraph ---- */
+
+
+
+.long-para{
+    line-height: 145%;
+    letter-spacing: 1px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 20px;
+    
+}
+.box p{
+    font-size: 100%;
+    line-height: 145%;
+}
+
+/* ---- Boxes--- */
+
+
+.box{
+    padding: 1%;
+}
+
+
+/* --- Icons --- */
+
+
+.icon-big{
+    font-size: 400%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+.icon-med{
+    font-size: 125%;
+    display: inline-block;
+    text-align: center;
+    color: #e67e22;
+    margin-bottom: 10px;
+    font-size: 125%;
+    margin-right: 5px;
+    /*tricks to aling and set text with icon*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+
+/* -----Buttons---- */
+
 
 .btn:link,
 .btn:visited{
@@ -57,8 +149,7 @@ h1{
 .button-tutorial:link,
 .button-tutorial:visited{
     margin-top: 20px;
-    margin-left: 70px;
-    margin-right: 65px;   
+    margin-right: 50px;   
     color: #fff;
     border: 1.5px solid #ecf0f1;
     background-color: #2ecc71;
@@ -72,31 +163,52 @@ h1{
 
 .btn:hover,
 .btn:active{
-    border: 3px solid #2c3e50;
+<<<<<<< HEAD
+    border: 5px solid #e67e22;
+=======
+    border: 3px solid #e67e22;
+>>>>>>> 7bad186c7b59b1253c95a5c57366bc7d180eb2aa
     
 }
 
 .button-tutorials:hover,
 .button-tutorials:active{
-    border: 3px solid #2c3e50;
+<<<<<<< HEAD
+    border: 5px solid #2c3e50;
+=======
+>>>>>>> 7bad186c7b59b1253c95a5c57366bc7d180eb2aa
     background-color: #186b3b;
     
 }
 
 .button-author:hover,
 .button-author:active{
-    border: 3px solid #2c3e50;
+<<<<<<< HEAD
+    border: 5px solid #e67e22;
+=======
+    border: 4px solid #e67e22;
+>>>>>>> 7bad186c7b59b1253c95a5c57366bc7d180eb2aa
     
 }
+
+
+/* ---- logo --- */
+
 
 .logo{
     float: left;
     width: 175px;
     padding: 20px 0px 0px 20px;
-    
+    width: 20%;
 }
+
+
+/*---- Navigation Bar ---- */
+
+
 .main-nav {
     float: right;
+    
 }
 .main-nav li {
     list-style: none;
@@ -123,3 +235,130 @@ h1{
     font-size: 135%;
     transition: border .2s;
 }
+
+
+/* --- Section --- */
+
+
+section {
+    padding: 80px 60px;
+}
+.section-courses{
+    margin: 0;
+    padding: 0;
+}
+.section-works{
+    background-color: #ecf0f1;
+}
+.section-locations{
+    font-size: 110%;
+    letter-spacing: 
+    word-spacing: 2px;
+    float: left;
+}
+.section-location .box{
+    
+}
+.section-locations .box:hover,
+.section-locations .box:active{
+    background-color: #ecf0f1;
+    transform: background .5s;
+}
+
+
+/* ---- Course Menu --- */
+
+
+.first-imageshow{
+    list-style: none;
+    width: 100%;
+}
+.first-imageshow li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.menu-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.menu-photo img{
+    opacity: .7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform .5s, opacity .5s;
+}
+.menu-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+/* how works */
+
+
+.work-box{
+    margin-top: 40px;
+}
+.work-box:first-child{
+    text-align: right;
+    padding-left: 12%;
+    height: inherit;
+}
+.work-box:last-child{
+    padding-left: 2%;
+    padding-top: 4%;
+    padding-bottom: 3.02%;
+}
+.app-photo{
+    width: 80%;
+    background-color: #ecf0f1;
+}
+
+.use-step{
+    margin-bottom: 40px;
+}
+.use-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    font-size: 140%;
+    float: left;
+    margin-right: 10px;
+    
+}
+.use-step p{
+        padding-top: 10px;
+        font-size: 120%;
+        margin-bottom: 30px;
+}
+.btn-app img{
+    display: inline-block;
+    width: 25%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+<<<<<<< HEAD
+
+
+/*---location--*/
+
+.section-locations{
+
+}
+.section-locations img{
+    width: 90%;
+}
+.section-locations a{
+    text-decoration: none;
+}
+=======
+>>>>>>> 7bad186c7b59b1253c95a5c57366bc7d180eb2aa
