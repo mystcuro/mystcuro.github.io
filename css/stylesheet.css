@@ -30,6 +30,7 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
     
 }
 
@@ -347,4 +348,41 @@ section {
 }
 .section-locations a{
     text-decoration: none;
+}
+
+/*---testimonials---*/
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0,.7),rgba(0,0, 0, .7)),url("../img/coding-job.png");
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 3%;
+    font-style: italic;
+    line-height: 145%;
+    letter-spacing: .5px;
+    font-size: 115%;
+    margin-bottom: 20px;
+    position: relative;
+}
+blockquote:before {
+    content: "\201c";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -20px;
+}
+
+cite{
+    display: block;
+    font-size: 90%;
+}
+
+cite img{
+    border-radius: 50%;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
