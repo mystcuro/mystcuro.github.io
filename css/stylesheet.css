@@ -134,7 +134,7 @@ h3{
 
 
 .btn:link,
-.btn:visited{
+.btn:visited,input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     text-decoration: none;
@@ -153,13 +153,14 @@ h3{
     margin-right: 50px;   
     color: #fff;
     border: 1.5px solid #ecf0f1;
-    background-color: #2ecc71;
+    background-color: #e67e10;
 }
 .button-author:link,
-.button-author:visited{
+.button-author:visited,
+input[type=submit]{
     margin-top: 20px;
     color: #fff;
-    border: 1.5px solid #ecf0f1;
+    border: 1.5px solid #fff;
 }
 
 .btn:hover,
@@ -168,17 +169,19 @@ h3{
     
 }
 
-.button-tutorials:hover,
-.button-tutorials:active{
-    border: 5px solid #2c3e50;
-    background-color: #186b3b;
+.button-tutorial:hover,
+.button-tutorial:active{
+    border: 2px solid #e67e22;
+    background-color: #e67e00;
     
 }
 
 .button-author:hover,
-.button-author:active{
-    border: 5px solid #e67e22;
-    
+.button-author:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    border: 2px solid #e67e22;
+    background-color: #e67e22;
 }
 
 
@@ -198,7 +201,6 @@ h3{
 
 .main-nav {
     float: right;
-    
 }
 .main-nav li {
     list-style: none;
@@ -225,7 +227,6 @@ h3{
     font-size: 135%;
     transition: border .2s;
 }
-
 
 /* --- Section --- */
 
@@ -255,6 +256,9 @@ section {
     transform: background .5s;
 }
 
+.section-plans{
+    background-color: #f4f4f4;
+}
 
 /* ---- Course Menu --- */
 
@@ -386,3 +390,134 @@ cite img{
     vertical-align: middle;
     margin-right: 10px;
 }
+
+/* --- plans --- */
+
+.plan-box{
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+.plan-box:hover,
+.plan-box:active{
+    box-shadow: 0px 3px 3px rgba(29, 14, 14, 0.23);
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: #e8e8e8 1px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.plan-price{
+    font-size: 250%;
+    font-weight: 100;
+    color: #e76e20;
+    padding-bottom: 15px;
+}
+.plan-price span{
+    font-size: 50%;
+    font-weight: 100;
+}
+.plan-box div:first-child{
+    background-color: rgba(127, 143, 166, 0.33);
+}
+.plan-box div:last-child{
+    text-align: center;
+}
+.plan-box ul{
+    list-style: none;
+    font-size: 125%;
+}
+.plan-box ul li{
+    padding: 5px 0; 
+}
+
+.signup2:link,
+.signup2:visited,
+input[type=submit]{
+    border: 2px solid #e76e20;
+    color: #e76320
+}
+.signup2:hover,
+.signup2:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
+    color:#fff;
+}
+
+
+/* --- plans --- */
+.contact-form{
+    width: 40%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00a8ff
+}
+input[type=checkbox]{
+    margin: 10px;
+}
+*:focus{outline: none;}
+
+/* --- plans --- */
+.section-footer{
+    margin: 0px;
+    padding: 0px;
+}
+footer{
+    background-color: #333;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+    padding-left: 10%;
+}
+.footer-socials{
+    list-style: none;
+    float: right;
+    padding-right: 10%;
+}
+.footer-nav li,
+.footer-socials li{
+    display: inline-block;
+    margin-right: 20px;
+    color: #e76e20;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.footer-socials li a:link,
+.footer-socials li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #e67e22;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e67e22;
+    
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.footer-socials li a:hover,
+.footer-socials li a:active{
+    border-bottom: 2px solid #888;
+    color: #888;
+}
+
+.footer-p{
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #888;
+}
+
